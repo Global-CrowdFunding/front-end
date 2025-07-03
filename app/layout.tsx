@@ -20,6 +20,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  viewport: "width=device-width, initial-scale=1",
+  openGraph: {
+    title: "global - 크라우드펀딩 플랫폼",
+    description: "창작자와 후원자를 연결하는 글로벌 크라우드펀딩 서비스",
+    // url: "https://your-domain.com", 미정
+    siteName: "global",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "global - 크라우드펀딩 플랫폼",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -28,11 +44,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
-        {children}
+        <main className="min-h-screen flex flex-col">{children}</main>
       </body>
     </html>
   );
