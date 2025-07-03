@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# ESLint
+#.eslintcache / 나중에 추가할 것
+
+# Editor
+#.vscode/ 나중에 추가할 것
+.idea/
